@@ -10,20 +10,9 @@ main{
   flex-grow: 1; 
 }
 
-.containerConteo{
-  width: 15rem;
-  height: 15rem;
-  border: 15px solid red;
-}
-
-.containerTemporizador{
+.containerCronometro{
   width: 100%;
-  min-width: 6.25rem;
-}
-
-.bgSelect{
-  background-color: #0E1729;
-  color: #fff;
+  min-width: 100px;
 }
 
 .containerButtons{
@@ -104,18 +93,7 @@ a:hover{
 }
 
 @media all and (min-width:576px){
-  .containerConteo{
-    width: 25rem;
-    height: 25rem;
-  }
-
-  .containerTemporizador{
-    width: 75%;
-  }
-}
-
-@media all and (min-width:768px){
-  .containerTemporizador{
-    width: 60%;
+  .containerCronometro{
+    max-width: 600px;
   }
 }
