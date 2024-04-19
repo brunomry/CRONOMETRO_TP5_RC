@@ -10,9 +10,20 @@ main{
   flex-grow: 1; 
 }
 
-.containerCronometro{
+.containerConteo{
+  width: 15rem;
+  height: 15rem;
+  border: 15px solid red;
+}
+
+.containerTemporizador{
   width: 100%;
-  min-width: 100px;
+  min-width: 6.25rem;
+}
+
+.bgSelect{
+  background-color: #0E1729;
+  color: #fff;
 }
 
 .containerButtons{
@@ -67,25 +78,44 @@ footer{
 .imageProfile{
   width: 425px;
   height: 425px;
+  transition: .7s;
 }
 
 .imageProfile:hover{
   width: 500px;
   height: 500px;
-  transition: .3s ease-in-out;
+  transition: .7s;
 }
 
-a .socialIcon{
+a .github{
   font-size: 40px;
+  color: #acadb3;
+  transition: 1s;
 }
 
-a .socialIcon:hover{
-  font-size: 50px;
-  transition: .3s ease-in-out;
+a .linkedIn{
+  font-size: 40px;
+  transition: 1s;
+}
+
+a:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 @media all and (min-width:576px){
-  .containerCronometro{
-    max-width: 600px;
+  .containerConteo{
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .containerTemporizador{
+    width: 75%;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerTemporizador{
+    width: 60%;
   }
 }
